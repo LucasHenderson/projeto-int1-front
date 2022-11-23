@@ -1,1 +1,24 @@
-<p>listar-materias works!</p>
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Matérias</h2>
+  </header>
+  <div class="mural" *ngIf="listaMaterias.length > 0, else semMaterias">
+    <div *ngFor="let materia of listaMaterias">
+      <app-ver-materia [materia]="materia"></app-ver-materia>
+    </div>
+  </div>
+</section>
+
+<ng-template #semMaterias>
+<div class="sem-materias ff-inter modelo aviso centralizar-container">
+  <mat-icon class="icone-aviso">info</mat-icon>
+  <p class="conteudo">Ainda não há matérias registradas!</p>
+  <div class="acoes">
+    <button class="botao-redirecionar" mat-flat-button routerLink="/" routerLinkActive="botao-ativo">
+      <span> Registrar Matéria </span>
+      <mat-icon>input</mat-icon>
+    </button>
+  </div>
+</div>
+</ng-template>
+

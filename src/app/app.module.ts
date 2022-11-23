@@ -15,6 +15,7 @@ import { AtualizarAlunosComponent } from './gerenciar-alunos/atualizar-alunos/at
 import { ListarMateriasComponent } from './materias/listar-materias/listar-materias.component';
 import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-grupos.component';
 import {MatCardModule} from '@angular/material/card';
+import { VerMateriaComponent } from './materias/ver-materia/ver-materia.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     LoginFormComponent,
     AtualizarAlunosComponent,
     ListarMateriasComponent,
-    ListarGruposComponent
+    ListarGruposComponent,
+    VerMateriaComponent
   ],
   imports: [
     BrowserModule,
