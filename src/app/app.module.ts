@@ -14,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AtualizarAlunosComponent } from './gerenciar-alunos/atualizar-alunos/atualizar-alunos.component';
 import { ListarMateriasComponent } from './materias/listar-materias/listar-materias.component';
 import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-grupos.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-g
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
