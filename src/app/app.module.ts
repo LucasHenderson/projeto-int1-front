@@ -19,6 +19,9 @@ import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-g
 import {MatCardModule} from '@angular/material/card';
 import { VerMateriaComponent } from './materias/ver-materia/ver-materia.component';
 import { EditarMateriaComponent } from './materias/editar-materia/editar-materia.component';
+import { VerGrupoComponent } from './gerenciar-grupos/ver-grupo/ver-grupo.component';
+import { EditarGrupoComponent } from './gerenciar-grupos/editar-grupo/editar-grupo.component';
+import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-grupo.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { EditarMateriaComponent } from './materias/editar-materia/editar-materia
     ListarMateriasComponent,
     ListarGruposComponent,
     VerMateriaComponent,
-    EditarMateriaComponent
+    EditarMateriaComponent,
+    VerGrupoComponent,
+    EditarGrupoComponent,
+    ExcluirGrupoComponent
   ],
   imports: [
     BrowserModule,

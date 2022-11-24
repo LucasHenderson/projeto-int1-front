@@ -1,0 +1,61 @@
+.mural {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+}
+
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sem-grupos {
+  margin-top: 5%;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.icone-aviso{
+  margin-bottom: 2%;
+  color: #FDB813;
+}
+
+.sem-grupos .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.acoes {
+  display: flex;
+  justify-content: flex-end
+}
+
+.botao-redirecionar {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+  transition: 0.5s ease-out;
+}
+.botao-redirecionar:hover{
+  box-shadow: 1px 1px 5px 0px lightgreen;
+  color: green;
+}
+
+.modelo {
+  box-shadow: 8px 8px 0px #FDB813;
+}
+
+.aviso {
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .aviso {
+    width: 100%;
+  }
+}

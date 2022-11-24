@@ -1,3 +1,5 @@
+import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-grupo.component';
+import { EditarGrupoComponent } from './gerenciar-grupos/editar-grupo/editar-grupo.component';
 import { EditarMateriaComponent } from './materias/editar-materia/editar-materia.component';
 import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-grupos.component';
 import { ListarMateriasComponent } from './materias/listar-materias/listar-materias.component';
@@ -12,7 +14,9 @@ const routes: Routes = [
   { path:"gerenciar-alunos", component: AtualizarAlunosComponent },
   { path:"materias", component:ListarMateriasComponent },
   { path:"gerenciar-grupos", component:ListarGruposComponent },
-  { path:"editar-materia", component:EditarMateriaComponent }
+  { path:"editar-materia", component:EditarMateriaComponent },
+  { path:"editar-grupo", component:EditarGrupoComponent },
+  { path:"excluir-grupo", component:ExcluirGrupoComponent }
 ];
 
 @NgModule({

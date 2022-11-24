@@ -1,0 +1,65 @@
+.acoes {
+  display: flex;
+  justify-content: flex-end
+}
+
+.botao-editar {
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.botao-excluir {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.grupo {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+.grupo:hover {
+  box-shadow: 1px 1px 5px 0px #004CBC;
+}
+
+.grupo .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.modelo {
+  box-shadow: 1px 1px 5px 0px lightgray;
+}
+
+.grupo-p {
+  width: 262px;
+}
+
+.icone-editar {
+  background-color: #F8F9FE;
+  transition: 0.5s ease;
+}
+
+.icone-deletar {
+  background-color: #F8F9FE;
+  transition: 0.5s ease;
+}
+
+.icone-editar:hover {
+  color: #FDB813;
+}
+.icone-deletar:hover {
+  color: red;
+}
+
+@media screen and (max-width: 426px) {
+  .grupo-p {
+    width: 100%;
+  }
+}
