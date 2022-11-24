@@ -1,3 +1,5 @@
+
+import { FormsModule } from '@angular/forms'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +18,7 @@ import { ListarMateriasComponent } from './materias/listar-materias/listar-mater
 import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-grupos.component';
 import {MatCardModule} from '@angular/material/card';
 import { VerMateriaComponent } from './materias/ver-materia/ver-materia.component';
+import { EditarMateriaComponent } from './materias/editar-materia/editar-materia.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { VerMateriaComponent } from './materias/ver-materia/ver-materia.componen
     AtualizarAlunosComponent,
     ListarMateriasComponent,
     ListarGruposComponent,
-    VerMateriaComponent
+    VerMateriaComponent,
+    EditarMateriaComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { VerMateriaComponent } from './materias/ver-materia/ver-materia.componen
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

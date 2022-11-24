@@ -1,0 +1,76 @@
+<div class="materia modelo centralizar-container ff-roboto-mono materia-p">
+  <mat-icon>menu_book</mat-icon>
+  <div class="conteudo">
+    <label for="periodo"><b>Nome:</b></label>
+    <input
+      type="text"
+      class="input"
+      id="nome-materia"
+      name="nome"
+      placeholder="Nome da matéria"
+      [(ngModel)]="materia.nome"
+    >
+    <label for="periodo"><b>Período:</b></label>
+    <input
+      type="text"
+      class="input"
+      id="periodo-materia"
+      name="periodo"
+      placeholder="Período"
+      [(ngModel)]="materia.periodo"
+    >
+    <label for="professor"><b>Professor:</b></label>
+    <input
+      type="text"
+      class="input"
+      id="professor-materia"
+      name="professor"
+      placeholder="Professor"
+      [(ngModel)]="materia.professor"
+    >
+    <label for="atualizacao"><b>Atualização:</b></label>
+    <input
+      type="text"
+      class="input"
+      id="atualizacao-materia"
+      name="atualizacao"
+      placeholder="Atualização"
+      [(ngModel)]="materia.atualizacao"
+    >
+    <label for="modelo"><b>Ofertada:</b></label>
+    <div class="container-radio">
+      <div class="radio-modelo">
+        <label for="modelo1">
+          <input
+            type="radio"
+            id="modelo1"
+            value=true
+            name="modelo-card"
+            [(ngModel)]="materia.ofertada"
+          >
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Sim</span>
+        </label>
+        <div class="radio-modelo">
+          <label for="modelo2">
+            <input
+              type="radio"
+              id="modelo2"
+              value=false
+              name="modelo-card"
+              [(ngModel)]="materia.ofertada"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Não</span>
+          </label>
+
+  </div>
+  <div class="acoes">
+    <button mat-stroked-button (click)="editarMateria()" class="botao">Salvar</button>
+    <button mat-stroked-button (click)="cancelar()" class="botao">Cancelar</button>
+  </div>
+</div>

@@ -14,7 +14,6 @@
   background-color: #F8F9FE;
   padding: 1rem;
   box-sizing: border-box;
-  cursor: pointer;
   transition: 0.5s ease;
 }
 
@@ -41,6 +40,14 @@
 }
 .icone-editar:hover {
   color: #FDB813;
+}
+
+.ofertada {
+  color: green;
+}
+
+.nao-ofertada {
+  color: red;
 }
 
 @media screen and (max-width: 426px) {

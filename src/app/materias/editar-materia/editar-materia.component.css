@@ -1,0 +1,105 @@
+.materia {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+  margin-top: 5%;
+}
+
+.input {
+  border: none;
+  height: 5px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+  box-shadow: 1px 1px 5px 0px lightgray;
+}
+
+.materia:hover {
+  box-shadow: 1px 1px 5px 0px #004CBC;
+}
+
+.materia .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+
+}
+
+.modelo {
+  box-shadow: 1px 1px 5px 0px lightgray;
+}
+
+.materia-p {
+  width: 300px;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  margin: 5px;
+}
+
+
+.ofertada {
+  color: green;
+}
+
+.nao-ofertada {
+  color: red;
+}
+
+.container-radio {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.radio {
+  margin: 0;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-modelo label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 1px solid #154580;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: #154580;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.custom-radio span {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+  border-color: #154580;
+}
+
+input[type='radio']:checked+.custom-radio span {
+  background: #154580;
+}

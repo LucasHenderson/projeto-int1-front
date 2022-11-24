@@ -5,10 +5,15 @@
     <p><b>Período: </b>{{materia.periodo}}</p>
     <p><b>Professor: </b>{{materia.professor}}</p>
     <p><b>Atualização: </b>{{materia.atualizacao}}</p>
-    <p><b>Ofertado: </b>{{materia.ofertada}}</p>
+    <div *ngIf="materia.ofertada, else falso">
+      <p><b>Ofertado: </b><mat-icon class="ofertada">check_circle</mat-icon></p>
+    </div>
+    <ng-template #falso>
+      <p><b>Ofertado: </b><mat-icon class="nao-ofertada">cancel</mat-icon></p>
+    </ng-template>
   </div>
   <div class="acoes">
-    <button class="botao-editar">
+    <button class="botao-editar" routerLink="/editar-materia">
       <mat-icon class="icone-editar">edit</mat-icon>
     </button>
   </div>

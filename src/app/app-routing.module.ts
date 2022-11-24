@@ -1,3 +1,4 @@
+import { EditarMateriaComponent } from './materias/editar-materia/editar-materia.component';
 import { ListarGruposComponent } from './gerenciar-grupos/listar-grupos/listar-grupos.component';
 import { ListarMateriasComponent } from './materias/listar-materias/listar-materias.component';
 import { AtualizarAlunosComponent } from './gerenciar-alunos/atualizar-alunos/atualizar-alunos.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path:"login", component:LoginFormComponent },
   { path:"gerenciar-alunos", component: AtualizarAlunosComponent },
   { path:"materias", component:ListarMateriasComponent },
-  { path:"gerenciar-grupos", component:ListarGruposComponent }
+  { path:"gerenciar-grupos", component:ListarGruposComponent },
+  { path:"editar-materia", component:EditarMateriaComponent }
 ];
 
 @NgModule({
