@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { Grupo } from 'src/app/models/grupo';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExcluirGrupoComponent implements OnInit {
 
-  constructor() { }
+  grupo: Grupo = {
+    id: 0,
+    plataforma: '',
+    link: ''
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  excluirGrupo(){
+
+  }
+
+  cancelar(){
+    this.router.navigate(['/gerenciar-grupos'])
+  }
 }

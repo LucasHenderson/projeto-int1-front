@@ -1,0 +1,34 @@
+.grupo {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+  margin-top: 5%;
+}
+
+.grupo .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+
+}
+
+.excluir {
+  color: red;
+}
+
+.modelo {
+  box-shadow: 1px 1px 5px 0px lightgray;
+}
+
+.grupo-p {
+  width: 300px;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  margin: 5px;
+}
