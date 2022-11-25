@@ -1,15 +1,15 @@
 import { Grupo } from 'src/app/models/grupo';
 import { Router } from '@angular/router';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-editar-grupo',
-  templateUrl: './editar-grupo.component.html',
-  styleUrls: ['./editar-grupo.component.css']
+  selector: 'app-adc-grupo',
+  templateUrl: './adc-grupo.component.html',
+  styleUrls: ['./adc-grupo.component.css']
 })
-export class EditarGrupoComponent implements OnInit {
+export class AdcGrupoComponent implements OnInit {
 
-  @Input() grupo: Grupo = {
+  grupo: Grupo = {
     id: 0,
     plataforma: '',
     link: ''
@@ -20,7 +20,7 @@ export class EditarGrupoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  editarGrupo() {
+  salvarGrupo() {
 
   }
 

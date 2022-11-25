@@ -12,6 +12,13 @@
   gap: 2rem;
 }
 
+.adc-grupo {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+}
+
 .sem-grupos {
   margin-top: 5%;
   padding: 1rem;

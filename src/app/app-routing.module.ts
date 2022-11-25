@@ -1,3 +1,4 @@
+import { AdcGrupoComponent } from './gerenciar-grupos/adc-grupo/adc-grupo.component';
 import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-grupo.component';
 import { EditarGrupoComponent } from './gerenciar-grupos/editar-grupo/editar-grupo.component';
 import { EditarMateriaComponent } from './materias/editar-materia/editar-materia.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path:"gerenciar-grupos", component:ListarGruposComponent },
   { path:"editar-materia", component:EditarMateriaComponent },
   { path:"editar-grupo", component:EditarGrupoComponent },
-  { path:"excluir-grupo", component:ExcluirGrupoComponent }
+  { path:"excluir-grupo", component:ExcluirGrupoComponent },
+  { path:"adc-grupo", component:AdcGrupoComponent }
 ];
 
 @NgModule({

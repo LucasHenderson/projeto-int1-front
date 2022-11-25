@@ -22,6 +22,7 @@ import { EditarMateriaComponent } from './materias/editar-materia/editar-materia
 import { VerGrupoComponent } from './gerenciar-grupos/ver-grupo/ver-grupo.component';
 import { EditarGrupoComponent } from './gerenciar-grupos/editar-grupo/editar-grupo.component';
 import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-grupo.component';
+import { AdcGrupoComponent } from './gerenciar-grupos/adc-grupo/adc-grupo.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-
     EditarMateriaComponent,
     VerGrupoComponent,
     EditarGrupoComponent,
-    ExcluirGrupoComponent
+    ExcluirGrupoComponent,
+    AdcGrupoComponent
   ],
   imports: [
     BrowserModule,

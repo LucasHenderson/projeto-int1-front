@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Materia } from 'src/app/models/materia';
 
 @Component({
@@ -17,7 +18,7 @@ export class EditarMateriaComponent implements OnInit {
     ofertada: true
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +29,6 @@ export class EditarMateriaComponent implements OnInit {
   }
 
   cancelar() {
-
+    this.router.navigate(['/materias'])
   }
 }
