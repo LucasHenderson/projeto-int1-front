@@ -1,3 +1,5 @@
+import { EditarMateriaComponent } from './../editar-materia/editar-materia.component';
+import { MatDialog } from '@angular/material/dialog';
 import { Component, Input, OnInit } from '@angular/core';
 import { Materia } from 'src/app/models/materia';
 
@@ -17,7 +19,15 @@ export class VerMateriaComponent implements OnInit {
     ofertada: true
   }
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialogEditMat() {
+    const dialogRef = this.dialog.open(EditarMateriaComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
   }

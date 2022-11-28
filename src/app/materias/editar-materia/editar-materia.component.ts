@@ -27,8 +27,4 @@ export class EditarMateriaComponent implements OnInit {
   editarMateria() {
 
   }
-
-  cancelar() {
-    this.router.navigate(['/materias'])
-  }
 }
