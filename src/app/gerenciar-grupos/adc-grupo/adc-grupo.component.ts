@@ -24,7 +24,4 @@ export class AdcGrupoComponent implements OnInit {
 
   }
 
-  cancelar() {
-    this.router.navigate(['/gerenciar-grupos'])
-  }
 }

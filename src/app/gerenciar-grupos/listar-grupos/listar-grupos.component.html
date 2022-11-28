@@ -1,7 +1,7 @@
 <section class="container">
   <header class="header d-flex">
     <h2 class="ff-inter">Grupos</h2>
-    <button mat-stroked-button class="adc-grupo ff-inter" routerLink="/adc-grupo">Adicionar Grupo</button>
+    <button mat-stroked-button class="adc-grupo ff-inter" (click)="openDialogAdcGrupo()">Adicionar Grupo</button>
   </header>
   <div class="mural" *ngIf="listaGrupos.length > 0, else semGrupos">
     <div *ngFor="let grupo of listaGrupos">

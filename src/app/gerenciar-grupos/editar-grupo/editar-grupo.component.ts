@@ -24,7 +24,4 @@ export class EditarGrupoComponent implements OnInit {
 
   }
 
-  cancelar() {
-    this.router.navigate(['/gerenciar-grupos'])
-  }
 }

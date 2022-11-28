@@ -1,3 +1,5 @@
+import { AdcGrupoComponent } from './../adc-grupo/adc-grupo.component';
+import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
 import { Grupo } from 'src/app/models/grupo';
 
@@ -26,7 +28,15 @@ export class ListarGruposComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialogAdcGrupo() {
+    const dialogRef = this.dialog.open(AdcGrupoComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
   }

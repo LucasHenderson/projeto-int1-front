@@ -24,7 +24,5 @@ export class ExcluirGrupoComponent implements OnInit {
 
   }
 
-  cancelar(){
-    this.router.navigate(['/gerenciar-grupos'])
-  }
+
 }

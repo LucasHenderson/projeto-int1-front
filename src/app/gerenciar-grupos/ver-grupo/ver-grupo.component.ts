@@ -1,4 +1,7 @@
+import { ExcluirGrupoComponent } from './../excluir-grupo/excluir-grupo.component';
+import { EditarGrupoComponent } from './../editar-grupo/editar-grupo.component';
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Grupo } from 'src/app/models/grupo';
 
 @Component({
@@ -14,7 +17,23 @@ export class VerGrupoComponent implements OnInit {
     link: ''
   }
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialogEdit() {
+    const dialogRef = this.dialog.open(EditarGrupoComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openDialogDelete() {
+    const dialogRef = this.dialog.open(ExcluirGrupoComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
   }

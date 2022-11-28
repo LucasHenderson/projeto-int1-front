@@ -5,10 +5,10 @@
     <p><b>Link: </b>{{grupo.link}}</p>
   </div>
   <div class="acoes">
-    <button class="botao-editar" routerLink="/editar-grupo">
+    <button class="botao-editar" (click)="openDialogEdit()">
       <mat-icon class="icone-editar">edit</mat-icon>
     </button>
-    <button class="botao-excluir" routerLink="/excluir-grupo">
+    <button class="botao-excluir" (click)="openDialogDelete()">
       <mat-icon class="icone-deletar">delete</mat-icon>
     </button>
   </div>

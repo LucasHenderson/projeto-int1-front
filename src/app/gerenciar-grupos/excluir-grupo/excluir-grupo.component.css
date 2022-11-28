@@ -1,5 +1,5 @@
 .grupo {
-  background-color: #F8F9FE;
+  background-color: white;
   padding: 1rem;
   box-sizing: border-box;
   transition: 0.5s ease;
@@ -14,10 +14,6 @@
 
 .excluir {
   color: red;
-}
-
-.modelo {
-  box-shadow: 1px 1px 5px 0px lightgray;
 }
 
 .grupo-p {

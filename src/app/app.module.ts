@@ -23,6 +23,7 @@ import { VerGrupoComponent } from './gerenciar-grupos/ver-grupo/ver-grupo.compon
 import { EditarGrupoComponent } from './gerenciar-grupos/editar-grupo/editar-grupo.component';
 import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-grupo.component';
 import { AdcGrupoComponent } from './gerenciar-grupos/adc-grupo/adc-grupo.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { AdcGrupoComponent } from './gerenciar-grupos/adc-grupo/adc-grupo.compon
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
