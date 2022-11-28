@@ -14,11 +14,7 @@ const routes: Routes = [
   { path:"login", component:LoginFormComponent },
   { path:"gerenciar-alunos", component: AtualizarAlunosComponent },
   { path:"materias", component:ListarMateriasComponent },
-  { path:"gerenciar-grupos", component:ListarGruposComponent },
-  { path:"editar-materia", component:EditarMateriaComponent },
-  { path:"editar-grupo", component:EditarGrupoComponent },
-  { path:"excluir-grupo", component:ExcluirGrupoComponent },
-  { path:"adc-grupo", component:AdcGrupoComponent }
+  { path:"gerenciar-grupos", component:ListarGruposComponent }
 ];
 
 @NgModule({
