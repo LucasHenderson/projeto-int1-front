@@ -9,16 +9,15 @@
     <mat-icon>account_circle</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="fazerLogOut()">
+    <button mat-menu-item (click)="fazerLogOut()" (click)="drawer.close()">
       <mat-icon>logout</mat-icon>
       <span>Sair</span>
     </button>
   </mat-menu>
 
-
 </mat-toolbar>
 
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container">
 <mat-drawer #drawer class="example-sidenav" mode="side">
 
   <mat-list role="list" *ngIf="mostrarMenu">
