@@ -1,3 +1,5 @@
+import { AuthGuard } from './guards/guards/auth.guard';
+import { AuthService } from './login/service/services/auth.service';
 
 import { FormsModule } from '@angular/forms'
 import { NgModule } from '@angular/core';
@@ -57,7 +59,7 @@ import {MatInputModule} from '@angular/material/input';
     MatFormFieldModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

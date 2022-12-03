@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar *ngIf="mostrarMenu">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
@@ -9,7 +9,7 @@
     <mat-icon>account_circle</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/login">
+    <button mat-menu-item (click)="fazerLogOut()">
       <mat-icon>logout</mat-icon>
       <span>Sair</span>
     </button>
@@ -21,7 +21,7 @@
 <mat-drawer-container class="example-container" autosize>
 <mat-drawer #drawer class="example-sidenav" mode="side">
 
-  <mat-list role="list">
+  <mat-list role="list" *ngIf="mostrarMenu">
     <mat-list-item role="listitem">
       <button mat-flat-button routerLink="/gerenciar-alunos" routerLinkActive="botao-ativo">
         <mat-icon>school</mat-icon><span> Gerenciar Alunos</span>

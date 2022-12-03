@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/guards/auth.guard';
 import { AdcGrupoComponent } from './gerenciar-grupos/adc-grupo/adc-grupo.component';
 import { ExcluirGrupoComponent } from './gerenciar-grupos/excluir-grupo/excluir-grupo.component';
 import { EditarGrupoComponent } from './gerenciar-grupos/editar-grupo/editar-grupo.component';
@@ -12,9 +13,9 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path:"", component:LoginFormComponent },
   { path:"login", component:LoginFormComponent },
-  { path:"gerenciar-alunos", component: AtualizarAlunosComponent },
-  { path:"materias", component:ListarMateriasComponent },
-  { path:"gerenciar-grupos", component:ListarGruposComponent }
+  { path:"gerenciar-alunos", component: AtualizarAlunosComponent, canActivate:[AuthGuard] },
+  { path:"materias", component:ListarMateriasComponent, canActivate:[AuthGuard] },
+  { path:"gerenciar-grupos", component:ListarGruposComponent, canActivate:[AuthGuard] }
 ];
 
 @NgModule({

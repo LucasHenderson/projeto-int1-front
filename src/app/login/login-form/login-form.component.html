@@ -12,32 +12,34 @@
                   </h3>
                 </div>
                 <div class="card-body">
-                  <form>
+                  <div>
+                  <!--aqui em cima era um form, tirei para parar de atualizar a pagina-->
 
                     <div class="form-group">
                       <mat-form-field appearance="outline" class="input-todo">
-                        <mat-label>Login</mat-label>
-                        <input matInput placeholder="exemplo@unitins.br">
+                        <mat-label>Email</mat-label>
+                        <input [(ngModel)]="usuario.email" autocomplete="off" matInput placeholder="exemplo@unitins.br">
                       </mat-form-field>
                     </div>
 
                     <div class="form-group">
                       <mat-form-field appearance="outline" class="input-todo">
                         <mat-label>Senha</mat-label>
-                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <input [(ngModel)]="usuario.senha" matInput [type]="hide ? 'password' : 'text'">
                         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </button>
                       </mat-form-field>
                     </div>
+                    <!--<div class="invalido"><p><b>Email ou senha inválido</b></p></div> -->
 
                     <div class="form-group align-items-center justify-content-between mt-4 mb-0">
-                      <button type="submit" class="btn-primary form-control">
+                      <button type="submit" class="btn-primary form-control" (click)="fazerLogin()">
                         Entrar
                       </button>
                     </div>
 
-                  </form>
+                  </div>
                 </div>
 
                 <div class="card-footer text-center">
