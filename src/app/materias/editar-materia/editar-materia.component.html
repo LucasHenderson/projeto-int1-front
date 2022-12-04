@@ -7,6 +7,7 @@
       class="input"
       id="nome-materia"
       name="nome"
+      autocomplete="off"
       placeholder="Nome da matéria"
       [(ngModel)]="materia.nome"
     >
@@ -16,6 +17,7 @@
       class="input"
       id="periodo-materia"
       name="periodo"
+      autocomplete="off"
       placeholder="Período"
       [(ngModel)]="materia.periodo"
     >
@@ -25,6 +27,7 @@
       class="input"
       id="professor-materia"
       name="professor"
+      autocomplete="off"
       placeholder="Professor"
       [(ngModel)]="materia.professor"
     >
@@ -34,9 +37,20 @@
       class="input"
       id="atualizacao-materia"
       name="atualizacao"
+      autocomplete="off"
       placeholder="Atualização"
       [(ngModel)]="materia.atualizacao"
     >
+    <label for="link"><b>Curso: </b></label>
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Selecionar</mat-label>
+      <mat-select [(ngModel)]="selecionarValor" name="curso">
+        <mat-option *ngFor="let curso of listaCursos" [value]="curso.id">
+          {{curso.nome}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
     <label for="modelo"><b>Ofertada:</b></label>
     <div class="container-radio">
       <div class="radio-modelo">

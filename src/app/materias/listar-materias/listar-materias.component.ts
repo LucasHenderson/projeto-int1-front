@@ -18,7 +18,7 @@ export class ListarMateriasComponent implements OnInit {
       ofertada: true,
       curso: {
         id: 1,
-        nome: 'Teste',
+        nome: 'Teste 1',
         quantidadePeriodos: 8
       }
     },

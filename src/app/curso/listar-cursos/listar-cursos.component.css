@@ -29,11 +29,6 @@
   word-wrap: break-word;
 }
 
-.acoes {
-  display: flex;
-  justify-content: flex-end
-}
-
 .botao-redirecionar {
   border: none;
   cursor: pointer;

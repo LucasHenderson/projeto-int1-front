@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Curso } from './../../models/curso';
+import { Component, OnInit, Input } from '@angular/core';
 import { Materia } from 'src/app/models/materia';
 
 @Component({
@@ -9,7 +9,27 @@ import { Materia } from 'src/app/models/materia';
 })
 export class EditarMateriaComponent implements OnInit {
 
-  materia: Materia = {
+  selecionarValor: string = '';
+
+  listaCursos: Curso[] = [
+    {
+      id: 1,
+      nome: 'Teste 1',
+      quantidadePeriodos: 8
+    },
+    {
+      id: 2,
+      nome: 'Teste 2',
+      quantidadePeriodos: 4
+    },
+    {
+      id: 3,
+      nome: 'Teste 3',
+      quantidadePeriodos: 6
+    }
+  ]
+
+  @Input() materia: Materia = {
     id: 0,
     nome: '',
     periodo: 0,
