@@ -12,7 +12,15 @@ export class EditarGrupoComponent implements OnInit {
   @Input() grupo: Grupo = {
     id: 0,
     plataforma: '',
-    link: ''
+    link: '',
+    materia: {
+      id: 0,
+      nome: '',
+      periodo: 1,
+      professor: '',
+      atualizacao: '',
+      ofertada: true
+    }
   }
 
   constructor(private router: Router) { }
@@ -20,7 +28,7 @@ export class EditarGrupoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  editarGrupo() {
+  editarGrupo(grupo: Grupo) {
 
   }
 

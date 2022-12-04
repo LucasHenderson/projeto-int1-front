@@ -15,16 +15,40 @@ export class ListarGruposComponent implements OnInit {
       id: 1,
       plataforma: 'Teste',
       link: 'Teste',
+      materia: {
+        id: 1,
+        nome: 'Matéria',
+        periodo: 1,
+        professor: 'Professor',
+        atualizacao: 'Teste',
+        ofertada: true
+      }
     },
     {
       id: 2,
       plataforma: 'Teste 2',
       link: 'Teste 2',
+      materia: {
+        id: 2,
+        nome: 'Matéria 2',
+        periodo: 2,
+        professor: 'Professor 2',
+        atualizacao: 'Teste 2',
+        ofertada: true
+      }
     },
     {
       id: 3,
       plataforma: 'Teste 3',
       link: '3',
+      materia: {
+        id: 3,
+        nome: 'Matéria 3',
+        periodo: 3,
+        professor: 'Professor 3',
+        atualizacao: 'Teste 3',
+        ofertada: true
+      }
     }
   ];
 

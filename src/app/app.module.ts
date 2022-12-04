@@ -28,6 +28,7 @@ import { AdcGrupoComponent } from './gerenciar-grupos/adc-grupo/adc-grupo.compon
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
