@@ -3,6 +3,25 @@
     <h2 class="ff-inter">Grupos</h2>
     <button mat-stroked-button class="adc-grupo ff-inter" (click)="openDialogAdcGrupo()">Adicionar Grupo</button>
   </header>
+  <div *ngIf="listaCursos.length > 0 && listaGrupos.length > 0">
+    <mat-form-field appearance="outline" style="width: 300px;">
+    <mat-label>Filtrar curso</mat-label>
+    <mat-select [(ngModel)]="selecionarValor" name="curso">
+      <mat-option>Todos</mat-option>
+      <mat-option *ngFor="let curso of listaCursos" [value]="curso.id">
+        {{curso.nome}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div>
+    <label for="periodo">Período: </label>
+    <mat-slider min="1" max="8" step="1" color="primary" discrete style="width: 250px;">
+      <input value="1" matSliderStartThumb>
+      <input value="8" matSliderEndThumb>
+    </mat-slider>
+  </div>
+  <button mat-stroked-button>Filtrar</button>
+  </div>
   <div class="mural" *ngIf="listaGrupos.length > 0, else semGrupos">
     <div *ngFor="let grupo of listaGrupos">
       <app-ver-grupo [grupo]="grupo"></app-ver-grupo>

@@ -2,6 +2,9 @@
   <header class="header d-flex">
     <h2 class="ff-inter">Matérias</h2>
   </header>
+  <div *ngIf="listaMaterias.length > 0">
+    <mat-slide-toggle color='primary'><b class="ff-inter">Apenas matérias ofertadas</b></mat-slide-toggle>
+  </div>
   <div class="mural" *ngIf="listaMaterias.length > 0, else semMaterias">
     <div *ngFor="let materia of listaMaterias">
       <app-ver-materia [materia]="materia"></app-ver-materia>

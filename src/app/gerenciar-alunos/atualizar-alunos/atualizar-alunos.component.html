@@ -1,18 +1,11 @@
-<mat-card class="example-card centralizar-container">
-  <mat-card-content>
-    <mat-list role="list">
-      <mat-list-item role="listitem">
-        <p><b>Data do sistema:</b> sistema.data</p>
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <p><b>Última atualização automática:</b> sistema.lastAutoAtt</p>
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <p><b>Última atualização manual:</b> sistema.lastManualAtt</p>
-      </mat-list-item>
-      <mat-list-item role="listitem">
-        <button mat-flat-button class="botao-opc">Atualizar sistema manualmente</button>
-      </mat-list-item>
-    </mat-list>
-  </mat-card-content>
+<mat-card class="card">
+  <div class="conteudo">
+    <p><b>Data do sistema:</b> sistema.data</p>
+    <p><b>Última atualização automática:</b> sistema.lastAutoAtt</p>
+    <p><b>Última atualização manual:</b> sistema.lastManualAtt</p>
+  </div>
+  <div class="botao">
+    <button mat-flat-button class="botao-opc">Atualizar sistema manualmente</button>
+  </div>
 </mat-card>
+

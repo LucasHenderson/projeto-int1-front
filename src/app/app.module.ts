@@ -32,6 +32,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { VerCursoComponent } from './curso/ver-curso/ver-curso.component';
 import { EditarCursoComponent } from './curso/editar-curso/editar-curso.component';
 import { ListarCursosComponent } from './curso/listar-cursos/listar-cursos.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { ListarCursosComponent } from './curso/listar-cursos/listar-cursos.compo
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatSliderModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { Curso } from './../../models/curso';
 import { AdcGrupoComponent } from './../adc-grupo/adc-grupo.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
@@ -9,6 +10,8 @@ import { Grupo } from 'src/app/models/grupo';
   styleUrls: ['./listar-grupos.component.css']
 })
 export class ListarGruposComponent implements OnInit {
+
+  selecionarValor: string = '';
 
   listaGrupos: Grupo[] = [
     {
@@ -66,6 +69,24 @@ export class ListarGruposComponent implements OnInit {
       }
     }
   ];
+
+  listaCursos: Curso[] = [
+    {
+      id: 1,
+      nome: 'Teste 1',
+      quantidadePeriodos: 8
+    },
+    {
+      id: 2,
+      nome: 'Teste 2',
+      quantidadePeriodos: 4
+    },
+    {
+      id: 3,
+      nome: 'Teste 3',
+      quantidadePeriodos: 6
+    }
+  ]
 
   constructor(public dialog: MatDialog) { }
 

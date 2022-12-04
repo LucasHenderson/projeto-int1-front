@@ -1,13 +1,30 @@
-.example-card {
+.card {
   max-width: 600px;
   height: 200px;
   margin-top: 5%;
   border-radius: 10px;
   box-shadow: 1px 1px 10px lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.conteudo {
+  width: 500px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .botao-opc {
-  width: 100%;
+  width: 500px;
+  min-width: 300px;
   border-radius: 10px;
   box-shadow: 1px 1px 5px 0px lightgray;
   transition: 0.5s ease-out;
