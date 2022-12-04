@@ -21,7 +21,12 @@ export class VerGrupoComponent implements OnInit {
       periodo: 1,
       professor: '',
       atualizacao: '',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 0,
+        nome: '',
+        quantidadePeriodos: 0
+      }
     }
   }
 

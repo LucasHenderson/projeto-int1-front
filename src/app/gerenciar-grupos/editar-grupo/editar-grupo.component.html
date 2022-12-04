@@ -19,6 +19,15 @@
       placeholder="Link do grupo"
       [(ngModel)]="grupo.link"
     >
+    <label for="link"><b>Matéria:</b></label>
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Selecionar</mat-label>
+      <mat-select [(ngModel)]="selecionarValor" name="materia">
+        <mat-option *ngFor="let materia of listaMaterias" [value]="materia.id">
+          {{materia.nome}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </div>
   <div class="acoes">
     <button mat-stroked-button (click)="editarGrupo(grupo)" class="botao">Salvar</button>

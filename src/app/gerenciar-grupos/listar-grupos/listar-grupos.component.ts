@@ -21,7 +21,12 @@ export class ListarGruposComponent implements OnInit {
         periodo: 1,
         professor: 'Professor',
         atualizacao: 'Teste',
-        ofertada: true
+        ofertada: true,
+        curso: {
+          id: 1,
+          nome: 'Teste 1',
+          quantidadePeriodos: 8
+        }
       }
     },
     {
@@ -34,7 +39,12 @@ export class ListarGruposComponent implements OnInit {
         periodo: 2,
         professor: 'Professor 2',
         atualizacao: 'Teste 2',
-        ofertada: true
+        ofertada: true,
+        curso: {
+          id: 2,
+          nome: 'Teste 2',
+          quantidadePeriodos: 4
+        }
       }
     },
     {
@@ -47,7 +57,12 @@ export class ListarGruposComponent implements OnInit {
         periodo: 3,
         professor: 'Professor 3',
         atualizacao: 'Teste 3',
-        ofertada: true
+        ofertada: true,
+        curso: {
+          id: 3,
+          nome: 'Teste 3',
+          quantidadePeriodos: 6
+        }
       }
     }
   ];

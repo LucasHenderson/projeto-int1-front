@@ -1,3 +1,4 @@
+import { Curso } from './curso';
 export interface Materia {
   id: number
   nome: string
@@ -5,4 +6,5 @@ export interface Materia {
   professor: string
   atualizacao: string
   ofertada: boolean
+  curso: Curso
 }

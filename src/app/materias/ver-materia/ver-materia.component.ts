@@ -16,7 +16,12 @@ export class VerMateriaComponent implements OnInit {
     periodo: 0,
     professor: '',
     atualizacao: '',
-    ofertada: true
+    ofertada: true,
+    curso: {
+      id: 0,
+      nome: '',
+      quantidadePeriodos: 0
+    }
   }
 
   constructor(public dialog: MatDialog) { }

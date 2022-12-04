@@ -15,7 +15,12 @@ export class ListarMateriasComponent implements OnInit {
       periodo: 1,
       professor: 'Teste',
       atualizacao: 'Teste',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 1,
+        nome: 'Teste',
+        quantidadePeriodos: 8
+      }
     },
     {
       id: 2,
@@ -23,7 +28,12 @@ export class ListarMateriasComponent implements OnInit {
       periodo: 2,
       professor: 'Teste 2',
       atualizacao: 'Teste 2',
-      ofertada: false
+      ofertada: false,
+      curso: {
+        id: 2,
+        nome: 'Teste 2',
+        quantidadePeriodos: 4
+      }
     },
     {
       id: 3,
@@ -31,7 +41,12 @@ export class ListarMateriasComponent implements OnInit {
       periodo: 3,
       professor: 'Teste 3',
       atualizacao: 'Teste 3',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 3,
+        nome: 'Teste 3',
+        quantidadePeriodos: 6
+      }
     }
   ];
 

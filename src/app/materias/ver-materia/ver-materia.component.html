@@ -5,6 +5,7 @@
     <p><b>Período: </b>{{materia.periodo}}</p>
     <p><b>Professor: </b>{{materia.professor}}</p>
     <p><b>Atualização: </b>{{materia.atualizacao}}</p>
+    <p><b>Curso: </b>{{materia.curso.nome}}</p>
     <div *ngIf="materia.ofertada, else falso">
       <p><b>Ofertado: </b><mat-icon class="ofertada">check_circle</mat-icon></p>
     </div>

@@ -19,7 +19,12 @@ export class AdcGrupoComponent implements OnInit {
       periodo: 1,
       professor: 'Professor 1',
       atualizacao: 'Hoje',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 1,
+        nome: 'Teste 1',
+        quantidadePeriodos: 8
+      }
     },
     {
       id: 2,
@@ -27,7 +32,12 @@ export class AdcGrupoComponent implements OnInit {
       periodo: 2,
       professor: 'Professor 2',
       atualizacao: 'Hoje',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 2,
+        nome: 'Teste 2',
+        quantidadePeriodos: 4
+      }
     },
     {
       id: 3,
@@ -35,7 +45,12 @@ export class AdcGrupoComponent implements OnInit {
       periodo: 3,
       professor: 'Professor 3',
       atualizacao: 'Hoje',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 3,
+        nome: 'Teste 3',
+        quantidadePeriodos: 6
+      }
     }
   ]
 
@@ -49,7 +64,12 @@ export class AdcGrupoComponent implements OnInit {
       periodo: 0,
       professor: '',
       atualizacao: '',
-      ofertada: true
+      ofertada: true,
+      curso: {
+        id: 0,
+        nome: '',
+        quantidadePeriodos: 0
+      }
     }
   }
 
