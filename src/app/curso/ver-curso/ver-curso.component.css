@@ -1,0 +1,49 @@
+.acoes {
+  display: flex;
+  justify-content: flex-end
+}
+
+.botao-editar {
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.curso {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+.curso:hover {
+  box-shadow: 1px 1px 5px 0px #004CBC;
+}
+
+.curso .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.modelo {
+  box-shadow: 1px 1px 5px 0px lightgray;
+}
+
+.curso-p {
+  width: 262px;
+}
+
+.icone-editar {
+  background-color: #F8F9FE;
+  transition: 0.5s ease;
+}
+.icone-editar:hover {
+  color: #FDB813;
+}
+
+@media screen and (max-width: 426px) {
+  .materia-p {
+    width: 100%;
+  }
+}

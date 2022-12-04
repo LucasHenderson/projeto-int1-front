@@ -1,0 +1,27 @@
+<div class="curso centralizar-container ff-roboto-mono curso-p">
+  <mat-icon>school</mat-icon>
+  <div class="conteudo">
+    <label for="nome"><b>Nome:</b></label>
+    <input
+      type="text"
+      class="input"
+      id="nome-curso"
+      name="nome"
+      placeholder="Nome do curso"
+      [(ngModel)]="curso.nome"
+    >
+    <label for="periodos"><b>Períodos:</b></label>
+    <input
+      type="text"
+      class="input"
+      id="periodos-curso"
+      name="periodos"
+      placeholder="Períodos"
+      [(ngModel)]="curso.quantidadePeriodos"
+    >
+  </div>
+  <div class="acoes">
+    <button mat-stroked-button (click)="editarCurso()" class="botao">Salvar</button>
+    <button mat-stroked-button mat-dialog-close class="botao">Cancelar</button>
+  </div>
+</div>

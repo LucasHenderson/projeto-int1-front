@@ -29,6 +29,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { VerCursoComponent } from './curso/ver-curso/ver-curso.component';
+import { EditarCursoComponent } from './curso/editar-curso/editar-curso.component';
+import { ListarCursosComponent } from './curso/listar-cursos/listar-cursos.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import {MatSelectModule} from '@angular/material/select';
     VerGrupoComponent,
     EditarGrupoComponent,
     ExcluirGrupoComponent,
-    AdcGrupoComponent
+    AdcGrupoComponent,
+    VerCursoComponent,
+    EditarCursoComponent,
+    ListarCursosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Cursos</h2>
+  </header>
+  <div class="mural" *ngIf="listaCursos.length > 0, else semCursos">
+    <div *ngFor="let curso of listaCursos">
+      <app-ver-curso [curso]="curso"></app-ver-curso>
+    </div>
+  </div>
+</section>
+
+<ng-template #semCursos>
+<div class="sem-cursos ff-inter modelo aviso centralizar-container">
+  <mat-icon class="icone-aviso">info</mat-icon>
+  <p class="conteudo">Ainda não há cursos registrados!</p>
+  <div class="acoes">
+    <button class="botao-redirecionar" mat-flat-button routerLink="/" routerLinkActive="botao-ativo">
+      <span> Registrar Curso </span>
+      <mat-icon>input</mat-icon>
+    </button>
+  </div>
+</div>
+</ng-template>
+

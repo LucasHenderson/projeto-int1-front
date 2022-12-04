@@ -23,7 +23,7 @@ export class EditarMateriaComponent implements OnInit {
     }
   }
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

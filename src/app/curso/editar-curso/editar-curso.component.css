@@ -1,0 +1,35 @@
+.curso {
+  background-color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+  margin-top: 5%;
+}
+
+.input {
+  border: none;
+  height: 5px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+  box-shadow: 1px 1px 5px 0px lightgray;
+}
+
+.curso .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+
+}
+
+.curso-p {
+  width: 300px;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  margin: 5px;
+}
