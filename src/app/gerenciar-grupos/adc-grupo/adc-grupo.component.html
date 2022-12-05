@@ -26,7 +26,7 @@
     <mat-form-field appearance="outline" style="width: 100%;">
       <mat-label>Selecionar</mat-label>
       <mat-select [(ngModel)]="selecionarValor" name="materia">
-        <mat-option *ngFor="let materia of listaMaterias" [value]="materia.id">
+        <mat-option *ngFor="let materia of listaMaterias" [value]="materia">
           {{materia.nome}}
         </mat-option>
       </mat-select>
@@ -34,7 +34,7 @@
 
   </div>
   <div class="acoes">
-    <button mat-stroked-button (click)="salvarGrupo()" class="botao">Salvar</button>
+    <button mat-stroked-button (click)="salvarGrupo(grupo)" class="botao">Salvar</button>
     <button mat-stroked-button mat-dialog-close class="botao">Cancelar</button>
   </div>
 </div>

@@ -11,40 +11,40 @@ export class ListarMateriasComponent implements OnInit {
   listaMaterias: Materia[] = [
     {
       id: 1,
-      nome: 'Teste',
+      nome: 'Algoritmos e Programação',
       periodo: 1,
-      professor: 'Teste',
-      atualizacao: 'Teste',
+      professor: 'Professor 1',
+      atualizacao: 'Hoje',
       ofertada: true,
       curso: {
         id: 1,
-        nome: 'Teste 1',
+        nome: 'Sistemas',
         quantidadePeriodos: 8
       }
     },
     {
       id: 2,
-      nome: 'Teste 2',
+      nome: 'Ciência Política',
       periodo: 2,
-      professor: 'Teste 2',
-      atualizacao: 'Teste 2',
+      professor: 'Professor 2',
+      atualizacao: 'Hoje',
       ofertada: false,
       curso: {
         id: 2,
-        nome: 'Teste 2',
+        nome: 'Direito',
         quantidadePeriodos: 4
       }
     },
     {
       id: 3,
-      nome: 'Teste 3',
+      nome: 'Microbiologia Agrícola',
       periodo: 3,
-      professor: 'Teste 3',
-      atualizacao: 'Teste 3',
+      professor: 'Professor 3',
+      atualizacao: 'Hoje',
       ofertada: true,
       curso: {
         id: 3,
-        nome: 'Teste 3',
+        nome: 'Agronomia',
         quantidadePeriodos: 6
       }
     }

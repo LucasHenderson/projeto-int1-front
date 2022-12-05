@@ -15,40 +15,40 @@ export class EditarGrupoComponent implements OnInit {
   listaMaterias: Materia[] = [
     {
       id: 1,
-      nome: 'Matéria 1',
+      nome: 'Algoritmos e Programação',
       periodo: 1,
       professor: 'Professor 1',
       atualizacao: 'Hoje',
       ofertada: true,
       curso: {
         id: 1,
-        nome: 'Teste 1',
+        nome: 'Sistemas',
         quantidadePeriodos: 8
       }
     },
     {
       id: 2,
-      nome: 'Matéria 2',
+      nome: 'Ciência Política',
       periodo: 2,
       professor: 'Professor 2',
       atualizacao: 'Hoje',
-      ofertada: true,
+      ofertada: false,
       curso: {
         id: 2,
-        nome: 'Teste 2',
+        nome: 'Direito',
         quantidadePeriodos: 4
       }
     },
     {
       id: 3,
-      nome: 'Matéria 3',
+      nome: 'Microbiologia Agrícola',
       periodo: 3,
       professor: 'Professor 3',
       atualizacao: 'Hoje',
       ofertada: true,
       curso: {
         id: 3,
-        nome: 'Teste 3',
+        nome: 'Agronomia',
         quantidadePeriodos: 6
       }
     }

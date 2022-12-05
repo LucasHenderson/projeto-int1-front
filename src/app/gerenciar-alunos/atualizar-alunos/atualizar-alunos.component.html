@@ -1,11 +1,11 @@
 <mat-card class="card">
   <div class="conteudo">
-    <p><b>Data do sistema:</b> sistema.data</p>
-    <p><b>Última atualização automática:</b> sistema.lastAutoAtt</p>
-    <p><b>Última atualização manual:</b> sistema.lastManualAtt</p>
+    <p><b>Data do sistema:</b> {{sistema.data}}</p>
+    <p><b>Última atualização automática:</b> {{sistema.lastAutoAtt}}</p>
+    <p><b>Última atualização manual:</b> {{sistema.lastManualAtt}}</p>
   </div>
   <div class="botao">
-    <button mat-flat-button class="botao-opc">Atualizar sistema manualmente</button>
+    <button mat-flat-button class="botao-opc" (click)="attData()">Atualizar sistema manualmente</button>
   </div>
 </mat-card>
 

@@ -11,17 +11,17 @@ export class ListarCursosComponent implements OnInit {
   listaCursos: Curso[] = [
     {
       id: 1,
-      nome: 'Teste 1',
+      nome: 'Sistemas',
       quantidadePeriodos: 8
     },
     {
       id: 2,
-      nome: 'Teste 2',
+      nome: 'Direito',
       quantidadePeriodos: 4
     },
     {
       id: 3,
-      nome: 'Teste 3',
+      nome: 'Agronomia',
       quantidadePeriodos: 6
     }
   ]
